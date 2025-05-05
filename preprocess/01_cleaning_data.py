@@ -46,4 +46,4 @@ dup_count = df.duplicated().sum()
 print(f"\n Número de renglones duplicados: {dup_count}")
 
 # Se guarda el dataset
-df.to_csv('Dataset/process/data_cleaned.csv', index='False')
+df.to_csv('Dataset/process/data_cleaned.csv', index=False)
