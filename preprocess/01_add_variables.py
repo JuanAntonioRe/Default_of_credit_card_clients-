@@ -11,7 +11,6 @@ df = df.drop('id', axis=1)
 
 # Variable: proporción pagada del monto facturado en el mes 4
 df['pay_ratio_4'] = df['pay_amt4'] / (df['bill_amt4'] + 1)
-df['pay_ratio_4'] = df['pay_ratio_4'].round(5)
 
 # Variable 2: Máximo retraso en pagos en los últimos 6 meses
 df['max_delay'] = df[[f'pay_{i}' for i in range(1, 7)]].max(axis=1)
